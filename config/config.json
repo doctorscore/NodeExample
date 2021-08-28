@@ -1,0 +1,30 @@
+{
+    "development": {
+    "database": "test",
+    "host": "127.0.0.1",
+    "port": 3000,
+    "mid": "rzp_test_HHEcnvhBl94IQU",
+    "secret": "B0sQ820rESsOzhOv46LEaZ6W"
+    },
+    "test": {
+    "database": "test",
+    "host": "",
+    "port": 8080,
+    "mid": "rzp_test_HHEcnvhBl94IQU",
+    "secret": "B0sQ820rESsOzhOv46LEaZ6W"
+    },
+    "demo": {
+    "database": "test",
+    "host": "",
+    "port": 8080,
+    "mid": "rzp_test_HHEcnvhBl94IQU",
+    "secret": "B0sQ820rESsOzhOv46LEaZ6W"
+    },
+    "production": {
+    "database": "test",
+    "host": "",
+    "port": 8080,
+    "mid": "rzp_live_f5Sh7BZ5QVOIyP",
+    "secret": "liPYC7pgrP1S0YlqsVcTrEpJ"
+    }
+  }

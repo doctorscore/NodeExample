@@ -1,0 +1,8 @@
+{
+    "title": "taskkaro",
+    "dbcredentials": {
+        "user": "admin",
+        "password": "admin",
+        "port": 27017
+    }
+}
