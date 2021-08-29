@@ -8,9 +8,9 @@ steps:
   - name: "gcr.io/cloud-builders/gcloud"
     args:
       [
-        "beta",
         "run",
         "deploy",
+        "cloudrun-main-service"
         "--project=ichowkidar",
         "--region=asia-south2",
         "--platform=managed",
