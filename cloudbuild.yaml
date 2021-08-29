@@ -10,7 +10,6 @@ steps:
       [
         "builds",
         "submit",
-        "--pack",
         "--image=gcr.io/ichowkidar/cloudrun-main-service",
       ]
   - name: "gcr.io/cloud-builders/gcloud"
