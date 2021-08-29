@@ -14,6 +14,6 @@ steps:
         "--project=ichowkidar",
         "--region=asia-south2",
         "--platform=managed",
-        "--image=gcr.io/ichowkidar/:$SHORT_SHA",
+        "--image=asia.gcr.io/ichowkidar/cloudrun-main-service:$SHORT_SHA",
       ]
     timeout: 1200s
