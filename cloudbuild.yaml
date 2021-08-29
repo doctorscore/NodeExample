@@ -1,0 +1,18 @@
+steps:
+  - name: node:16
+    entrypoint: npm
+    args: ["install"]
+  - name: node
+    entrypoint: npm
+    args: ["run", "build"]
+  - name: "gcr.io/cloud-builders/gcloud"
+    args:
+      [
+        "run",
+        "deploy",
+        "--project=ichowkidar",
+        "--region=asia-south2",
+        "--version=$SHORT_SHA",
+
+      ]
+    timeout: 1200s
