@@ -10,10 +10,10 @@ steps:
       [
         "run",
         "deploy",
-        "cloudrun-main-service"
+        "cloudrun-main-service",
         "--project=ichowkidar",
         "--region=asia-south2",
         "--platform=managed",
-        "--image=gcr.io/ichowkidar/main:$SHORT_SHA"
+        "--image=gcr.io/ichowkidar/main:$SHORT_SHA",
       ]
     timeout: 1200s
