@@ -18,7 +18,7 @@ steps:
         "run",
         "deploy",
         "cloudrun-main-service",
-        "--region=asia-south2",
+        "--region=asia-south1",
         "--platform=managed",
         "--image=gcr.io/cloudrun-main-service/cloudrun-main-service:$SHORT_SHA",
       ]
