@@ -4,4 +4,4 @@ steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: ['push', 'gcr.io/ichowkidar/nodeexample:$SHORT_SHA']
 - name: 'gcr.io/cloud-builders/gcloud'
-  args: ['beta', 'run', 'deploy', 'nodeexample', '--region=asia-south2', '--platform=managed', '--image=gcr.io/ichowkidar/nodeexample:$SHORT_SHA']
+  args: ['beta', 'run', 'deploy', 'nodeexample', '--region=asia-south2', '--platform=managed', '--allow-unauthenticated', '--image=gcr.io/ichowkidar/nodeexample:$SHORT_SHA']
