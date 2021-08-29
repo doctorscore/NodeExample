@@ -10,8 +10,8 @@ steps:
       [
         "builds",
         "submit",
-        "--tag=gcr.io/ichowkidar/cloudrun-main-service",
-        "--config=cloudbuild.yaml"
+        "--pack",
+        "--image=gcr.io/ichowkidar/cloudrun-main-service",
       ]
   - name: "gcr.io/cloud-builders/gcloud"
     args:
