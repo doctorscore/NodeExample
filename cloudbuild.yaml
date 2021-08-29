@@ -6,7 +6,20 @@ steps:
     entrypoint: npm
     args: ["run"]
   - name: "gcr.io/cloud-builders/gcloud"
-    args: ["builds", "submit", "--tag=gcr.io/$GOOGLE_CLOUD_PROJECT/cloudrun-main-service"]
-  - name: 'gcr.io/cloud-builders/gcloud'
-    args: ['run', 'deploy', 'cloudrun-main-service', '--region=asia-south2', '--platform=managed', '--image=gcr.io/cloudrun-main-service/cloudrun-main-service:$SHORT_SHA']
-  
+    args:
+      [
+        "builds",
+        "submit",
+        "--tag=gcr.io/$GOOGLE_CLOUD_PROJECT/cloudrun-main-service",
+      ]
+  - name: "gcr.io/cloud-builders/gcloud"
+    args:
+      [
+        "run",
+        "deploy",
+        "cloudrun-main-service",
+        "--region=asia-south2",
+        "--platform=managed",
+        "--image=gcr.io/cloudrun-main-service/cloudrun-main-service:$SHORT_SHA",
+      ]
+    timeout: 1200s
