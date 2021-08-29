@@ -8,11 +8,12 @@ steps:
   - name: "gcr.io/cloud-builders/gcloud"
     args:
       [
+        "beta",
         "run",
         "deploy",
         "--project=ichowkidar",
         "--region=asia-south2",
-        "--version=$SHORT_SHA",
-
+        "--platform=managed",
+        "--image=gcr.io/ichowkidar/main:$SHORT_SHA"
       ]
     timeout: 1200s
