@@ -11,6 +11,7 @@ steps:
         "builds",
         "submit",
         "--tag=gcr.io/ichowkidar/cloudrun-main-service",
+        "--config=cloudbuild.yaml"
       ]
   - name: "gcr.io/cloud-builders/gcloud"
     args:
