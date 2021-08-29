@@ -6,6 +6,6 @@ ADD . /app
 
 RUN npm install
 
-CMD [ "node", "server.js" ]
+RUN export DEV_APP_PORT=8080
 
-EXPOSE 3000 80 8080
+CMD [ "node", "server.js" ]
